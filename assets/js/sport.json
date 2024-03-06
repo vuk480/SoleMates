@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "ime":"Basketball"
+    },
+    {
+        "id":2,
+        "ime":"Soccer"
+    },
+    {
+        "id":3,
+        "ime":"Running"
+    }
+]

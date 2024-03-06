@@ -1,0 +1,406 @@
+[
+    {
+        "id": 1,
+        "name": "Air Force 1",
+        "genderId": 3,
+        "cena": 160,
+        "collectionID": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/air-force-slika1.jpg",
+                "alt": "Air Force 1"
+            },
+            "img2": {
+                "src": "/assets/img/air-force-slika2.jpg",
+                "alt": "Air Force 1"
+            },
+            "img3": {
+                "src": "/assets/img/air-force-slika3.jpg",
+                "alt": "Air Force 1"
+            }
+        }
+    },
+    {
+        "id": 2,
+        "name": "Air Jordan 1 Lows",
+        "genderId": 1,
+        "cena": 160,
+        "collectionID": 2,
+        "images": {
+            "img1": {
+                "src": "/assets/img/air-jordan-low1.jpeg",
+                "alt": "Air Jordan 1 Lows"
+            },
+            "img2": {
+                "src": "/assets/img/air-jordan-low2.png",
+                "alt": "Air Jordan 1 Lows"
+            },
+            "img3": {
+                "src": "/assets/img/air-jordan-low3.png",
+                "alt": "Air Jordan 1 Lows"
+            }
+        }
+    },
+    {
+        "id": 3,
+        "name": "Air Jordan 1 Lows Patch",
+        "genderId": 1,
+        "cena": 160,
+        "collectionID": 2,
+        "images": {
+            "img1": {
+                "src": "/assets/img/air-jordan-low-belo-plave1.jpeg",
+                "alt": "Air Jordan 1 Lows Patch"
+            },
+            "img2": {
+                "src": "/assets/img/air-jordan-low-belo-plave2.jpeg",
+                "alt": "Air Jordan 1 Lows"
+            },
+            "img3": {
+                "src": "/assets/img/air-jordan-low-belo-plave3.jpeg",
+                "alt": "Air Jordan 1 Lows"
+            }
+        }
+    },{
+        "id": 4,
+        "name": "Air Jordan 1 Lows Void",
+        "genderId": 1,
+        "cena": 160,
+        "collectionID": 2,
+        "images": {
+            "img1": {
+                "src": "/assets/img/air-jordan-low-crne1.jpeg",
+                "alt": "Air Jordan 1 Lows Void"
+            },
+            "img2": {
+                "src": "/assets/img/air-jordan-low-crne2.jpeg",
+                "alt": "Air Jordan 1 Lows Void"
+            },
+            "img3": {
+                "src": "/assets/img/air-jordan-low-crne3.jpeg",
+                "alt": "Air Jordan 1 Lows Void"
+            }
+        }
+    },{
+        "id": 5,
+        "name": "Air Jordan 5 Retro",
+        "genderId": 2,
+        "cena": 160,
+        "collectionID": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/air-jordan-retro-green1.png",
+                "alt": "Air Jordan 5 Retro"
+            },
+            "img2": {
+                "src": "/assets/img/air-jordan-retro-green2.png",
+                "alt": "Air Jordan 5 Retro"
+            },
+            "img3": {
+                "src": "/assets/img/air-jordan-retro-green3.png",
+                "alt": "Air Jordan 5 Retro"
+            }
+        }
+    },{
+        "id": 6,
+        "name": "Air Jordan 1 High Orange",
+        "genderId": 1,
+        "cena": 160,
+        "collectionID": 1,
+        "images": {
+            "img1": {
+                "src": "/assets/img/air-jordan-retro-high1.jpeg",
+                "alt": "Air Jordan 1 High Orange"
+            },
+            "img2": {
+                "src": "/assets/img/air-jordan-retro-high2.jpeg",
+                "alt": "Air Jordan 1 High Orange"
+            },
+            "img3": {
+                "src": "/assets/img/air-jordan-retro-high3.jpeg",
+                "alt": "Air Jordan 1 High Orange"
+            }
+        }
+    },{
+        "id": 7,
+        "name": "Air Jordan 1 High Zoom",
+        "genderId": 1,
+        "cena": 160,
+        "collectionID": 1,
+        "images": {
+            "img1": {
+                "src": "/assets/img/air-jordan-zoom-high1.jpeg",
+                "alt": "Air Jordan 1 High Zoom"
+            },
+            "img2": {
+                "src": "/assets/img/air-jordan-zoom-high2.jpeg",
+                "alt": "Air Jordan 1 High Zoom"
+            },
+            "img3": {
+                "src": "/assets/img/air-jordan-zoom-high3.jpeg",
+                "alt": "Air Jordan 1 High Zoom"
+            }
+        }
+    },{
+        "id": 8,
+        "name": "Nike Dunk Low Pink",
+        "genderId": 2,
+        "cena": 160,
+        "collectionID": 3,
+        "images": {
+            "img1": {
+                "src": "/assets/img/dunk-low-women1.png",
+                "alt": "Nike Dunk Low Pink"
+            },
+            "img2": {
+                "src": "/assets/img/dunk-low-women2.jpeg",
+                "alt": "Nike Dunk Low Pink"
+            },
+            "img3": {
+                "src": "/assets/img/dunk-low-women3.png",
+                "alt": "Nike Dunk Low Pink"
+            }
+        }
+    },{
+        "id": 9,
+        "name": "Nike Dunk Low Panda",
+        "genderId": 3,
+        "cena": 160,
+        "categoryId": 3,
+        "images": {
+            "img1": {
+                "src": "/assets/img/dunk-low-women-panda1.png",
+                "alt": "Nike Dunk Low Panda"
+            },
+            "img2": {
+                "src": "/assets/img/dunk-low-women-panda2.png",
+                "alt": "Nike Dunk Low Panda"
+            },
+            "img3": {
+                "src": "/assets/img/dunk-low-women-panda3.png",
+                "alt": "Nike Dunk Low Panda"
+            }
+        }
+    },{
+        "id": 10,
+        "name": "Nike Superfly 9 Mercurial",
+        "genderId": 1,
+        "cena": 160,
+        "collectionID": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/kopacke1.jpeg",
+                "alt": "Nike Superfly 9 Elite Mercurial"
+            },
+            "img2": {
+                "src": "/assets/img/kopacke2.jpeg",
+                "alt": "Nike Superfly 9 Elite Mercurial"
+            },
+            "img3": {
+                "src": "/assets/img/kopacke3.jpeg",
+                "alt": "Nike Superfly 9 Elite Mercurial"
+            }
+        }
+    },{
+        "id": 11,
+        "name": "Nike Phantom Luna 2",
+        "genderId": 1,
+        "cena": 160,
+        "collectionID": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/kopacke-zelene1.png",
+                "alt": "Nike Phantom Luna 2"
+            },
+            "img2": {
+                "src": "/assets/img/kopacke-zelene2.png",
+                "alt": "Nike Phantom Luna 2"
+            },
+            "img3": {
+                "src": "/assets/img/kopacke-zelene3.png",
+                "alt": "Nike Phantom Luna 2"
+            }
+        }
+    },{
+        "id": 12,
+        "name": "LeBron XXI Queen Conch",
+        "genderId": 1,
+        "cena": 160,
+        "collectionID": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/lebron1.png",
+                "alt": "LeBron XXI The Queen Conch"
+            },
+            "img2": {
+                "src": "/assets/img/lebron2.jpeg",
+                "alt": "LeBron XXI The Queen Conch"
+            },
+            "img3": {
+                "src": "/assets/img/lebron3.png",
+                "alt": "LeBron XXI The Queen Conch"
+            }
+        }
+    },{
+        "id": 13,
+        "name": "Luka 2",
+        "genderId": 1,
+        "cena": 160,
+        "categoryId": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/luka1.jpeg",
+                "alt": "Luka 2"
+            },
+            "img2": {
+                "src": "/assets/img/luka2.png",
+                "alt": "Luka 2"
+            },
+            "img3": {
+                "src": "/assets/img/luka3.png",
+                "alt": "Luka 2"
+            }
+        }
+    },{
+        "id": 14,
+        "name": "Nike Victori One",
+        "genderId": 3,
+        "cena": 160,
+        "collectionID": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/papuce-crne1.png",
+                "alt": "Nike Victori One"
+            },
+            "img2": {
+                "src": "/assets/img/papuce-crne2.png",
+                "alt": "Nike Victori One"
+            },
+            "img3": {
+                "src": "/assets/img/papuce-crne3.png",
+                "alt": "Nike Victori One"
+            }
+        }
+    },{
+        "id": 15,
+        "name": "Sabrina 1 BKLYN's Finest",
+        "genderId": 2,
+        "cena": 160,
+        "collectionID": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/sabrina1.png",
+                "alt": "Sabrina 1 BKLYN's Finest"
+            },
+            "img2": {
+                "src": "/assets/img/sabrina.2.png",
+                "alt": "Sabrina 1 BKLYN's Finest"
+            },
+            "img3": {
+                "src": "/assets/img/sabrina.png",
+                "alt": "Sabrina 1 BKLYN's Finest"
+            }
+        }
+    },{
+        "id": 16,
+        "name": "Nike Icon Classic SE",
+        "genderId": 2,
+        "cena": 160,
+        "categoryId": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/sandale1.png",
+                "alt": "Nike Icon Classic SE"
+            },
+            "img2": {
+                "src": "/assets/img/sandale2.png",
+                "alt": "Nike Icon Classic SE"
+            },
+            "img3": {
+                "src": "/assets/img/sandale3.png",
+                "alt": "Nike Icon Classic SE"
+            }
+        }
+    },{
+        "id": 17,
+        "name": "Nike Air Max DN",
+        "genderId": 2,
+        "cena": 160,
+        "collectionID": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/air-max-dn1.png",
+                "alt": "Nike Air Max DN"
+            },
+            "img2": {
+                "src": "/assets/img/air-max-dn2.jpeg",
+                "alt": "Nike Air Max DN"
+            },
+            "img3": {
+                "src": "/assets/img/air-max-dn3.jpeg",
+                "alt": "Nike Air Max DN"
+            }
+        }
+    },{
+        "id": 18,
+        "name": "Nike BRSB",
+        "genderId": 1,
+        "cena": 160,
+        "collectionID": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/starke-nike1.png",
+                "alt": "Nike BRSB"
+            },
+            "img2": {
+                "src": "/assets/img/starke-nike2.png",
+                "alt": "Nike BRSB"
+            },
+            "img3": {
+                "src": "/assets/img/starke-nike3.png",
+                "alt": "Nike BRSB"
+            }
+        }
+    },{
+        "id": 19,
+        "name": "Nike Pegasus 40",
+        "genderId": 2,
+        "cena": 160,
+        "collectionID": 4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/zoom-patike1.png",
+                "alt": "Nike Pegasus 40"
+            },
+            "img2": {
+                "src": "/assets/img/zoom-patike2.jpeg",
+                "alt": "Nike Pegasus 40"
+            },
+            "img3": {
+                "src": "/assets/img/zoom-patike3.png",
+                "alt": "Nike Pegasus 40"
+            }
+        }
+    },{
+        "id": 20,
+        "name": "Nike Offcourt",
+        "genderId": 3,
+        "cena": 160,
+        "collectionID":4,
+        "images": {
+            "img1": {
+                "src": "/assets/img/papuce-bele1.png",
+                "alt": "Nike Offcourt"
+            },
+            "img2": {
+                "src": "/assets/img/papuce-bele2.png",
+                "alt": "Nike Offcourt"
+            },
+            "img3": {
+                "src": "/assets/img/papuce-bele3.png",
+                "alt": "Nike Offcourt"
+            }
+        }
+    }
+    
+]

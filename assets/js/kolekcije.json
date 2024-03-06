@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "ime":"Air Jordan 1 High"
+    },
+    {
+        "id":2,
+        "ime":"Air Jordan 1 Low"
+    },
+    {
+        "id":3,
+        "ime":"Nike Dunks"
+    },
+    {
+        "id":4,
+        "ime":"Other"
+    }
+]
