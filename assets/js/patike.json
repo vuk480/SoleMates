@@ -1,10 +1,11 @@
 [
     {
         "id": 1,
-        "name": "Air Force 1",
-        "genderId": 3,
-        "cena": 160,
-        "collectionID": 4,
+        "ime": "Air Force 1",
+        "genderId": "3",
+        "cena": "100",
+        "collectionID": "4",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/air-force-slika1.jpg",
@@ -22,10 +23,11 @@
     },
     {
         "id": 2,
-        "name": "Air Jordan 1 Lows",
-        "genderId": 1,
-        "cena": 160,
-        "collectionID": 2,
+        "ime": "Air Jordan 1 Lows",
+        "genderId": "1",
+        "cena": "130",
+        "collectionID":"2",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/air-jordan-low1.jpeg",
@@ -43,10 +45,11 @@
     },
     {
         "id": 3,
-        "name": "Air Jordan 1 Lows Patch",
-        "genderId": 1,
-        "cena": 160,
-        "collectionID": 2,
+        "ime": "Air Jordan 1 Lows Path",
+        "genderId": "1",
+        "cena": "140",
+        "collectionID": "2",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/air-jordan-low-belo-plave1.jpeg",
@@ -63,10 +66,11 @@
         }
     },{
         "id": 4,
-        "name": "Air Jordan 1 Lows Void",
-        "genderId": 1,
-        "cena": 160,
-        "collectionID": 2,
+        "ime": "Air Jordan 1 Lows Void",
+        "genderId": "1",
+        "cena": "140",
+        "collectionID": "2",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/air-jordan-low-crne1.jpeg",
@@ -83,10 +87,11 @@
         }
     },{
         "id": 5,
-        "name": "Air Jordan 5 Retro",
-        "genderId": 2,
-        "cena": 160,
-        "collectionID": 4,
+        "ime": "Air Jordan 5 Retro",
+        "genderId": "2",
+        "cena": "200",
+        "collectionID": "4",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/air-jordan-retro-green1.png",
@@ -103,10 +108,11 @@
         }
     },{
         "id": 6,
-        "name": "Air Jordan 1 High Orange",
-        "genderId": 1,
-        "cena": 160,
-        "collectionID": 1,
+        "ime": "Air Jordan 1 High Cron",
+        "genderId": "1",
+        "cena": "190",
+        "collectionID": "1",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/air-jordan-retro-high1.jpeg",
@@ -123,10 +129,11 @@
         }
     },{
         "id": 7,
-        "name": "Air Jordan 1 High Zoom",
-        "genderId": 1,
-        "cena": 160,
-        "collectionID": 1,
+        "ime": "Air Jordan 1 High Zoom",
+        "genderId": "1",
+        "cena": "190",
+        "collectionID": "1",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/air-jordan-zoom-high1.jpeg",
@@ -143,10 +150,11 @@
         }
     },{
         "id": 8,
-        "name": "Nike Dunk Low Pink",
-        "genderId": 2,
-        "cena": 160,
-        "collectionID": 3,
+        "ime": "Nike Dunk Low Pink",
+        "genderId": "2",
+        "cena": "110",
+        "collectionID": "3",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/dunk-low-women1.png",
@@ -163,10 +171,11 @@
         }
     },{
         "id": 9,
-        "name": "Nike Dunk Low Panda",
-        "genderId": 3,
-        "cena": 160,
-        "categoryId": 3,
+        "ime": "Nike Dunk Low Panda",
+        "genderId": "3",
+        "cena": "110",
+        "collectionID": "3",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/dunk-low-women-panda1.png",
@@ -183,10 +192,11 @@
         }
     },{
         "id": 10,
-        "name": "Nike Superfly 9 Mercurial",
-        "genderId": 1,
-        "cena": 160,
-        "collectionID": 4,
+        "ime": "Nike Superfly Mercurial",
+        "genderId": "1",
+        "cena": "90",
+        "collectionID": "4",
+        "sportId":"2",
         "images": {
             "img1": {
                 "src": "/assets/img/kopacke1.jpeg",
@@ -203,10 +213,11 @@
         }
     },{
         "id": 11,
-        "name": "Nike Phantom Luna 2",
-        "genderId": 1,
-        "cena": 160,
-        "collectionID": 4,
+        "ime": "Nike Phantom Luna 2",
+        "genderId": "1",
+        "cena": "100",
+        "collectionID": "4",
+        "sportId":"2",
         "images": {
             "img1": {
                 "src": "/assets/img/kopacke-zelene1.png",
@@ -223,10 +234,11 @@
         }
     },{
         "id": 12,
-        "name": "LeBron XXI Queen Conch",
-        "genderId": 1,
-        "cena": 160,
-        "collectionID": 4,
+        "ime": "LeBron Queen Conch",
+        "genderId": "1",
+        "cena": "120",
+        "collectionID": "4",
+        "sportId":"1",
         "images": {
             "img1": {
                 "src": "/assets/img/lebron1.png",
@@ -238,15 +250,16 @@
             },
             "img3": {
                 "src": "/assets/img/lebron3.png",
-                "alt": "LeBron XXI The Queen Conch"
+                "alt": "LeBron XXI Queen Conch"
             }
         }
     },{
         "id": 13,
-        "name": "Luka 2",
-        "genderId": 1,
-        "cena": 160,
-        "categoryId": 4,
+        "ime": "Luka 2",
+        "genderId": "1",
+        "cena": "110",
+        "collectionID": "4",
+        "sportId":"1",
         "images": {
             "img1": {
                 "src": "/assets/img/luka1.jpeg",
@@ -263,10 +276,11 @@
         }
     },{
         "id": 14,
-        "name": "Nike Victori One",
-        "genderId": 3,
-        "cena": 160,
-        "collectionID": 4,
+        "ime": "Nike Victori One",
+        "genderId": "3",
+        "cena": "40",
+        "collectionID": "4",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/papuce-crne1.png",
@@ -283,10 +297,11 @@
         }
     },{
         "id": 15,
-        "name": "Sabrina 1 BKLYN's Finest",
-        "genderId": 2,
-        "cena": 160,
-        "collectionID": 4,
+        "ime": "Sabrina 1 BKLYN",
+        "genderId": "2",
+        "cena": "140",
+        "collectionID": "4",
+        "sportId":"1",
         "images": {
             "img1": {
                 "src": "/assets/img/sabrina1.png",
@@ -303,10 +318,11 @@
         }
     },{
         "id": 16,
-        "name": "Nike Icon Classic SE",
-        "genderId": 2,
-        "cena": 160,
-        "categoryId": 4,
+        "ime": "Nike Icon Classic SE",
+        "genderId": "2",
+        "cena": "60",
+        "collectionID": "4",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/sandale1.png",
@@ -323,10 +339,11 @@
         }
     },{
         "id": 17,
-        "name": "Nike Air Max DN",
-        "genderId": 2,
-        "cena": 160,
-        "collectionID": 4,
+        "ime": "Nike Air Max DN",
+        "genderId": "2",
+        "cena": "120",
+        "collectionID": "4",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/air-max-dn1.png",
@@ -343,10 +360,11 @@
         }
     },{
         "id": 18,
-        "name": "Nike BRSB",
-        "genderId": 1,
-        "cena": 160,
-        "collectionID": 4,
+        "ime": "Nike BRSB",
+        "genderId": "1",
+        "cena": "90",
+        "sportId":"null",
+        "collectionID": "4",
         "images": {
             "img1": {
                 "src": "/assets/img/starke-nike1.png",
@@ -363,10 +381,11 @@
         }
     },{
         "id": 19,
-        "name": "Nike Pegasus 40",
-        "genderId": 2,
-        "cena": 160,
-        "collectionID": 4,
+        "ime": "Nike Pegasus 40",
+        "genderId": "2",
+        "cena": "100",
+        "collectionID": "4",
+        "sportId":"3",
         "images": {
             "img1": {
                 "src": "/assets/img/zoom-patike1.png",
@@ -383,10 +402,11 @@
         }
     },{
         "id": 20,
-        "name": "Nike Offcourt",
-        "genderId": 3,
-        "cena": 160,
-        "collectionID":4,
+        "ime": "Nike Offcourt",
+        "genderId": "3",
+        "cena": "40",
+        "collectionID":"4",
+        "sportId":"null",
         "images": {
             "img1": {
                 "src": "/assets/img/papuce-bele1.png",
