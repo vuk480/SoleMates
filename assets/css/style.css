@@ -1,4 +1,6 @@
-
+body{
+  background-color: #aaa;
+}
 
 #patikeIFilt{
     width:80%;
@@ -303,10 +305,6 @@ body{
     background-color: green;
 }
 
-input[type="text"] {
-    background: transparent;
-    border: none;
-  }
 
 .hidden{
     display: none;
@@ -368,8 +366,7 @@ li{
 
 .nav-menu.active{
   z-index: 10000000;
-  background-color: rgba(0, 0, 0,0.5);
-  backdrop-filter: blur(5px);
+  background-color: #fff;
 }
 
 .bar{
@@ -490,7 +487,6 @@ li{
 
 
 .suppUs:hover{
-    width: 17%;
     background-color:white;
     border: #000 solid 2px;
 
@@ -503,6 +499,7 @@ li{
 .suppBl{
     background-color: #000;
     color: white;
+    width: 100px;
 }
 
 
@@ -701,6 +698,7 @@ li{
 .footer {
     padding: 40px 0;
     background-color: #000;
+    margin-top: 100px;
   }
   .footer .social {
     text-align: center;
@@ -867,3 +865,218 @@ li{
   .heading_container{
     text-align: center;
   }
+
+
+  .slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;  /* for chrome/safari */
+    appearance: none;          /* for modern browsers */
+    width: 100%;                /* specify width */
+    height: 10px;               /* specify height */
+    background-color:#fff;      /* white background */
+    outline: none;               /* remove outline */
+    border-radius: 5px;          /* rounded corners */
+  
+    /* track */
+    &::-webkit-slider-track {
+      -webkit-appearance: none;  /* for chrome/safari */
+       /* for modern browsers */
+      background-color:#000;      /* white background */
+      border-radius: 5px;          /* rounded corners */
+    }
+  
+    /* thumb */
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;  /* for chrome/safari */
+      appearance: none;          /* for modern browsers */
+      width: 20px;                 /* specify width */
+      height: 20px;                /* specify height */
+      background-color: #000;      /* black background */
+      border-radius: 50%;         /* rounded thumb */
+      cursor: pointer;            /* indicate interaction */
+    }}
+
+    #drzacFiltPati{
+      width: 100%;
+      margin: 0px auto;
+    }
+
+  
+    @media (min-width: 1400px){}
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1400px;
+    }
+
+    #patike.row{
+      margin-right: 10px;
+    }
+
+  
+    #ispisKorpe{
+      width: 100%;
+    }
+
+  
+
+    .imgKorpa img{
+      width: 100%;
+      max-height: 250px;
+    }
+
+    .quantity-button {
+      display: inline-flex;  /* Allow buttons and input to align side-by-side */
+    }
+    
+    .quantity-input {
+      border: 1px solid #ccc;  /* Adjust border style as needed */
+      padding: 5px;  /* Adjust padding as needed (might affect width calculation) */
+      /* Removed width and added these properties: */
+      width: 10%;
+      min-width: 20px;  /* Set a minimum width to prevent collapsing */
+      text-align: center;  /* Center the number within the input */
+    }
+    input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.ukloni{
+  height: 100%;
+}
+
+.emptyCart{
+  width: 80%;
+  background-color: #312e2e;
+  border-radius: 20;
+  margin: 50px auto;
+  color: white;
+  padding:25px;
+  height: 300px;
+}
+
+.emptyCart p{
+  font-size: 24px;
+}
+
+
+.shopNowBtn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block; 
+  cursor: pointer; 
+}
+
+.shopNowBtn a{
+  text-decoration: none!important; 
+  color: black;
+
+}
+
+.shopNowBtn:hover { /* Optional hover effect */
+  background-color: #f2f2f2; /* Slight gray background on hover */
+}
+
+.hide {
+  display: none;
+}
+
+#checkOut{
+  width: 80%;
+  margin: 0px auto;
+}
+
+#addForma{
+  margin-bottom: 100px;
+}
+
+
+#thankYouModal {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+#thankYouModal p{
+  font-size: 24px;
+  color: #000;
+
+}
+
+/* Style for the overlay background */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;}
+
+
+  #checkOutTitle{
+    margin: 100px auto;
+    text-align: center;
+  }
+
+  #author{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    ;
+  }
+  
+  #imgAuth{
+    width: 45%;
+  
+  }
+  
+  #imgAuth img{
+    width: 100%;
+    
+  }
+  
+  #infoAuth{
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #infoAuth p{
+    font-size: 25px;
+
+  }
+  
+  @media only screen and (max-width: 767px){
+    #author{
+      flex-direction: column;
+      
+    }
+    #imgAuth{
+      width: 100%;
+    }
+    #infoAuth{
+      width: 100%;
+      margin-top: 30px;
+    }
+  
+  }
+  
