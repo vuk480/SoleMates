@@ -8,15 +8,15 @@
         "sportId":"null",
         "images": {
             "img1": {
-                "src": "/assets/img/air-force-slika1.jpg",
+                "src": "assets/img/air-force-slika1.jpg",
                 "alt": "Air Force 1"
             },
             "img2": {
-                "src": "/assets/img/air-force-slika2.jpg",
+                "src": "assets/img/air-force-slika2.jpg",
                 "alt": "Air Force 1"
             },
             "img3": {
-                "src": "/assets/img/air-force-slika3.jpg",
+                "src": "assets/img/air-force-slika3.jpg",
                 "alt": "Air Force 1"
             }
         }
