@@ -10,7 +10,7 @@ var concatArr = [];
 var kolicina =[];
 var korpa= [];
 
-var url=location.pathname;
+var url=location.pathname.includes("shop.html");
 
 function fetchData(url) {
   return new Promise((resolve, reject) => {
@@ -28,7 +28,7 @@ function fetchData(url) {
   });
 }
 
-if(url=="/shop.html"){
+if(url){
 
   
   window.onload = async function() {
