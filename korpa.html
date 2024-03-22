@@ -7,11 +7,11 @@
     <meta name="keywords" content="shoes, resell, sneakers, limited edition, Jordan, Dunks, Air Jordan">
     <meta name="author" content="Sole Mates">
 
- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-   
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <title>Sole Mates</title>
@@ -19,7 +19,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -67,7 +67,10 @@
 
       <div id="checkOutTitle"><h2>Check Out</h2></div>
       <div id="checkOut" class="row d-flex justify-content-between">
-          <div id="addForma" class="col-12 col-sm-6">
+        <div id="sum" class="col-12">
+            
+        </div>
+          <div id="addForma" class="col-12 mb-5">
               <form action="#addForma" id="zaResetforme">
                 <div class="d-flex justify-content-between row mb-2">
                 <div class="col-5">
@@ -110,12 +113,10 @@
                   <textarea id="addInfo"class="rounded border border-1 w-100" name="addInfo" rows="4"></textarea>
                 </div>
 
-                <button id="submitForm" class="btn btn-dark" onclick="proveraForme(event)">Submit</button> <div class="errMsgForm submitBtn form-text"></div>
+                <button id="submitForm" class="btn btn-dark btnForCheckOut" onclick="proveraForme(event)">Submit</button> <div class="errMsgForm submitBtn form-text"></div>
               </form>
           </div>
-          <div id="proba" class="col-sm-5">
-            
-          </div>
+          
 
 
 
