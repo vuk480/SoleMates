@@ -30,7 +30,7 @@ function fetchData(url) {
 
 if(url=="/shop.html"){
 
-  
+  console.log("proba");
   window.onload = async function() {
     try {
       const [fetchedKollekcije, fetchedSportovi, fetchedPolovi, fetchedPatike] = await Promise.all([
