@@ -11,7 +11,7 @@ var kolicina =[];
 var korpa= [];
 
 var url=location.pathname;
-
+console.log(url)
 function fetchData(url) {
   return new Promise((resolve, reject) => {
     $.ajax({
