@@ -6,17 +6,20 @@
     <meta name="description" content="Buy and sell authentic sneakers and limited edition shoes. Find the latest Jordans, Dunks, and more at great prices.">
     <meta name="keywords" content="shoes, resell, sneakers, limited edition, Jordan, Dunks, Air Jordan">
     <meta name="author" content="Sole Mates">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
     <title>Sole Mates</title>
     <link rel="stylesheet" href="assets/css/style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -47,7 +50,7 @@
               <a href="author.html" class="nav-link">Author</a>
             </li>
             <li class="nav-item">
-              <a href="korpa.html" class="nav-link"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span id="numbItems"></span></a>
+              <a href="korpa.html" class="nav-link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             </li>
           </ul>
           <div class="hamburger">
@@ -58,23 +61,85 @@
         </nav>
         </header>
 
-        <div class="row container d-flex justify-content-center justify-content-xl-between justify-content-lg-between justify-content-md-between
-         mt-5 " id="drzacFiltPati">
-            <div id="filtForm" class="col-10 col-sm-10 col-md-2 col-lg-2 border mb-3">
-            </div>
-            <div id="patikeIFilt" class="col-12 col-sm-6 col-md-9 col-lg-10 row container d-flex mb-3">
-                <div class="row" id="patike"></div>
-            </div>
-        </div>
+    
+      <div id="ispisKorpe" class="container"></div>
+        
 
-       
+      <div id="checkOutTitle"><h2>Check Out</h2></div>
+      <div id="checkOut" class="row d-flex justify-content-between">
+        <div id="sum" class="col-12">
+            
+        </div>
+          <div id="addForma" class="col-12 mb-5">
+              <form action="#addForma" id="zaResetforme">
+                <div class="d-flex justify-content-between row mb-2">
+                <div class="col-5">
+                  <label for="fName" class="form-label">First Name(*)</label>
+                  <input type="text" class="form-control" id="fName">
+                  <div class="errMsgForm fName form-text"></div>
+                </div>
+                <div class="col-5">
+                  <label for="lName" class="form-label">Last Name(*)</label>
+                  <input type="text" class="form-control" id="lName">
+                  <div class="errMsgForm lName form-text"></div>
+                </div>
+                </div>
+                <div class="mb-2">
+                  <label for="emailForm" class="form-label">Email address(*)</label>
+                  <input type="email" class="form-control" id="emailForm">
+                  <div class="errMsgForm mailFor form-text"></div>
+                </div>
+
+                <div class="mb-2">
+                  <label for="tab" class="form-label mb-2">Delivery Options</label><br>
+                  <input type="radio"  name="tab" id="outAddresRadio"  onclick="show1();" />
+                    Pickup at the shop 
+                      <input  type="radio" name="tab" id="outAddresRadio" onclick="show2();" />
+                       Delivery
+                      <div id="ourAdd" class="hide mb-2">
+                        <label for="addressHome" class="form-label">Your Address</label>
+                        <input type="text" class="form-control" id="addressHome">
+                        <div class="errMsgForm emErr form-text"></div>
+                     </div> 
+                     <div id="yourAdd" class="hide mb-2">
+                      <label for="disabledTextInput" class="form-label">Our Address</label>
+                      <input disabled type="text" id="disabledTextInput" class="form-control" placeholder="9768 Ocean Ave. Windermere, FL 34786">
+                      
+                   </div>
+                </div>
+
+                <div class="mb-2">
+                  <label for="addInfo" class="form-label">Additional info.</label></br>
+                  <textarea id="addInfo"class="rounded border border-1 w-100" name="addInfo" rows="4"></textarea>
+                </div>
+
+                <button id="submitForm" class="btn btn-dark btnForCheckOut" onclick="proveraForme(event)">Submit</button> <div class="errMsgForm submitBtn form-text"></div>
+              </form>
+          </div>
+          
+
+
+
+         
+          <div id="thankYouModal">
+            <p>Thank you for shopping with us!</p>
+            <p>Your order will be arriving in 2-3 weeks</p>
+          </div>
+
+          
+          <div id="overlay"></div>
+                </div>
+
+      
+               
+
      
         <div class="footer">
             <div class="social">
               <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
               <a href="sitemap.xml"><i class="fa fa-sitemap"></i></a>
               <a href="SoleMates.pdf"><i class="fa fa-file"></i></a>
-              <a href="https://www.facebook.com/jonessnowboards/"><i class="fa fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
             </div>
             <ul class="list">
               <li>
