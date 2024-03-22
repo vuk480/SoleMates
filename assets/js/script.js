@@ -11,7 +11,7 @@ var kolicina =[];
 var korpa= [];
 
 var url=location.pathname;
-console.log(url)
+
 function fetchData(url) {
   return new Promise((resolve, reject) => {
     $.ajax({
@@ -28,7 +28,7 @@ function fetchData(url) {
   });
 }
 
-if(url=="/shop.html"){
+if(url=="/SoleMates/shop.html"){
 
   
   window.onload = async function() {
@@ -405,7 +405,7 @@ ddlLista.addEventListener('change',function(){
 
 }
 
-if (url === "/korpa.html") {
+if (url === "/SoleMates/korpa.html") {
   window.onload = async function() {
     console.log("proba");
     try {
@@ -775,7 +775,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
       
   }
 
-  if(url=="/author.html"){
+  if(url=="/SoleMates/author.html"){
 
   
   
