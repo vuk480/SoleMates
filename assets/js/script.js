@@ -30,8 +30,9 @@ function fetchData(url) {
 
 if(url=="/shop.html"){
 
-  console.log("proba");
+  
   window.onload = async function() {
+    console.log("proba");
     try {
       const [fetchedKollekcije, fetchedSportovi, fetchedPolovi, fetchedPatike] = await Promise.all([
         fetchData("/assets/js/kolekcije.json"),
@@ -406,6 +407,7 @@ ddlLista.addEventListener('change',function(){
 
 if (url === "/korpa.html") {
   window.onload = async function() {
+    console.log("proba");
     try {
       const fetchedPatike = await fetchData("/assets/js/patike.json");
       patike = fetchedPatike;
