@@ -34,10 +34,10 @@ if(url=="/shop.html"){
   window.onload = async function() {
     try {
       const [fetchedKollekcije, fetchedSportovi, fetchedPolovi, fetchedPatike] = await Promise.all([
-        fetchData("assets/js/kolekcije.json"),
-        fetchData("assets/js/sport.json"),
-        fetchData("assets/js/pol.json"),
-        fetchData("assets/js/patike.json"),
+        fetchData("/assets/js/kolekcije.json"),
+        fetchData("/assets/js/sport.json"),
+        fetchData("/assets/js/pol.json"),
+        fetchData("/assets/js/patike.json"),
       ]);
   
       kolekcije = fetchedKollekcije;
@@ -407,7 +407,7 @@ ddlLista.addEventListener('change',function(){
 if (url === "/korpa.html") {
   window.onload = async function() {
     try {
-      const fetchedPatike = await fetchData("assets/js/patike.json");
+      const fetchedPatike = await fetchData("/assets/js/patike.json");
       patike = fetchedPatike;
       
       korpa = JSON.parse(localStorage.getItem('cartItemsLS'));
