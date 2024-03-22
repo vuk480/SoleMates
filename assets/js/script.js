@@ -35,10 +35,10 @@ if(url=="/SoleMates/shop.html"){
     console.log("proba");
     try {
       const [fetchedKollekcije, fetchedSportovi, fetchedPolovi, fetchedPatike] = await Promise.all([
-        fetchData("/assets/js/kolekcije.json"),
-        fetchData("/assets/js/sport.json"),
-        fetchData("/assets/js/pol.json"),
-        fetchData("/assets/js/patike.json"),
+        fetchData("assets/js/kolekcije.json"),
+        fetchData("assets/js/sport.json"),
+        fetchData("assets/js/pol.json"),
+        fetchData("assets/js/patike.json"),
       ]);
   
       kolekcije = fetchedKollekcije;
@@ -409,7 +409,7 @@ if (url === "/SoleMates/korpa.html") {
   window.onload = async function() {
     console.log("proba");
     try {
-      const fetchedPatike = await fetchData("/assets/js/patike.json");
+      const fetchedPatike = await fetchData("assets/js/patike.json");
       patike = fetchedPatike;
       
       korpa = JSON.parse(localStorage.getItem('cartItemsLS'));
