@@ -32,7 +32,7 @@ if(url=="/SoleMates/shop.html"){
 
   
   window.onload = async function() {
-    console.log("proba");
+   
     try {
       const [fetchedKollekcije, fetchedSportovi, fetchedPolovi, fetchedPatike] = await Promise.all([
         fetchData("assets/js/kolekcije.json"),
@@ -56,9 +56,13 @@ if(url=="/SoleMates/shop.html"){
     } catch (error) {
       console.error("Error fetching data:", error);
     }
-    var proba = localStorage.getItem('brItemaUKorpi');
-    if(proba == null || proba !== undefined){
-    document.getElementById('numbItems').innerHTML = proba}
+    var korpaPrekoStranica = localStorage.getItem('brItemaUKorpi');
+    if(korpaPrekoStranica == null || korpaPrekoStranica !== undefined){
+      if(korpaPrekoStranica==0){
+        korpaPrekoStranica=1;
+        document.getElementById('numbItems').innerHTML = korpaPrekoStranica
+      }else{
+    document.getElementById('numbItems').innerHTML = korpaPrekoStranica}}
   };
 
   
@@ -132,7 +136,7 @@ function createHTML(data) {
       
        }else{
         cartItems.push(btn.id);
-        console.log(cartItems) 
+        
         localStorage.setItem('brItemaUKorpi',dodatnePatike.length);
         
         var brItemaUKorpi = localStorage.getItem('brItemaUKorpi');
@@ -394,7 +398,7 @@ patikeGend.forEach(type => {
         }
     });
 })
-console.log(cartItems)
+
 
 var ddlLista= document.getElementById('ddlSort');
 ddlLista.addEventListener('change',function(){
@@ -407,7 +411,6 @@ ddlLista.addEventListener('change',function(){
 
 if (url === "/SoleMates/korpa.html") {
   window.onload = async function() {
-    console.log("proba");
     try {
       const fetchedPatike = await fetchData("assets/js/patike.json");
       patike = fetchedPatike;
@@ -445,6 +448,8 @@ if (url === "/SoleMates/korpa.html") {
         kolicina.push(brojac);
       }
 
+      document.querySelector('#submitForm').setAttribute('disabled','');
+      document.querySelector('.submitBtn').textContent = "Please fill in all required fields";
      
      if(korpa == null || korpa.length==0 || korpa == ''){
       var prazanCart = document.getElementById('ispisKorpe');
@@ -505,14 +510,14 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     let i=0;
     if(patikeIzKorpe.length > 0){
       for(let patika of patikeIzKorpe){
-
+        
         htmlSintaksa+=
         `
           <div class="row d-flex justify-content-between border border-dark my-2">
           <div class="col-12 col-sm-6 my-2 ">
             <div class="d-flex justify-content-center row">
               <div class="imgKorpa col-5 col-sm-4 d-flex justify-content-center">
-                <img src="${patika.images.img1.src}" alt="${patika.images.img1.src}">
+                <img src="${patika.images.img1.src}" alt="${patika.images.img1.alt}">
               </div>
               <div class="text-center col-12 col-sm-4 d-flex justify-content-center flex-column">
                 <p>${patika.ime}</p>
@@ -555,7 +560,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
           document.getElementById('checkOutTitle').style.display='none'
           document.getElementById('checkOut').style.display='none'
           document.getElementById('addForma').style.display='none'
-          document.getElementById('proba').style.display='none';
+          document.getElementById('sum').style.display='none';
           var prazanCart = document.getElementById('ispisKorpe');
           prazanCart.innerHTML = `
             <div class="emptyCart">
@@ -572,7 +577,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
      
       
       function ispisCene(suma){
-        var tax = Math.floor(Math.random() * (20 - 5) + 5);
+        var tax = Math.floor(Math.random() * (15 - 10) + 10);
         htmlIspis ="";
 
         htmlIspis+=`<div id="summary">
@@ -592,14 +597,13 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
         <div id="total" class="text-right">$${suma+tax}</div>
         </div>
 
-        <hr>
+        <hr>`
 
-        <button id="btnForCheckOut" class="btn btn-dark w-100">Check Out</button>`
-
-        document.querySelector('#proba').innerHTML =htmlIspis;
-        document.querySelector('#btnForCheckOut').setAttribute('disabled',"");
+        document.querySelector('#sum').innerHTML =htmlIspis;
         
-        document.getElementById('btnForCheckOut').addEventListener('click', function() {
+        
+        document.querySelector('.btnForCheckOut').addEventListener('click', function() {
+          console.log("test")
           localStorage.clear()
           document.getElementById('thankYouModal').style.display = 'block';
           document.getElementById('overlay').style.display = 'block';
@@ -703,6 +707,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
                 document.querySelector('.emErr').textContent = "Addres is not in the right format, Ex. 'Street 1'"
               }else{
                 document.querySelector('.emErr').textContent = ""
+              
               }
             }
           })
@@ -718,6 +723,10 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
                 document.querySelector('.fName').textContent = "First Name is not in the right format, Ex. 'John'"
               }else{
                 document.querySelector('.fName').textContent = ""
+                if(prezime.value!=='' && email.value!==''){
+                  document.querySelector('#submitForm').removeAttribute('disabled');
+                  document.querySelector('.submitBtn').textContent = "";
+                }
               }
             }
           })
@@ -732,6 +741,10 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
                 document.querySelector('.lName').textContent = "Last Name is not in the right format, Ex. 'Doe'"
               }else{
                 document.querySelector('.lName').textContent = ""
+                if(ime.value!=='' && email.value!==''){
+                  document.querySelector('#submitForm').removeAttribute('disabled');
+                  document.querySelector('.submitBtn').textContent = "";
+                }
               }
             }
           })
@@ -746,6 +759,10 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
                 document.querySelector('.mailFor').textContent = "Email is not in the right format, Ex. 'john@example.com'"
               }else{
                 document.querySelector('.mailFor').textContent = ""
+                if(ime.value!=='' && prezime.value!==''){
+                  document.querySelector('#submitForm').removeAttribute('disabled');
+                  document.querySelector('.submitBtn').textContent = "";
+                }
               }
             }
           })
@@ -768,7 +785,14 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
           
               document.querySelector('#zaResetforme').reset();
           
-              document.querySelector('#btnForCheckOut').removeAttribute('disabled');
+              localStorage.clear()
+              document.getElementById('thankYouModal').style.display = 'block';
+              document.getElementById('overlay').style.display = 'block';
+            
+              
+              setTimeout(function() {
+                window.location.href = 'index.html';
+              }, 3000);
             }
           }
 
@@ -778,7 +802,13 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   if(url=="/SoleMates/author.html"){
 
   
-  
+  var korpaPrekoStranica = localStorage.getItem('brItemaUKorpi');
+    if(korpaPrekoStranica == null || korpaPrekoStranica !== undefined){
+      if(korpaPrekoStranica==0){
+        korpaPrekoStranica=1;
+        document.getElementById('numbItems').innerHTML = korpaPrekoStranica
+      }else{
+    document.getElementById('numbItems').innerHTML = korpaPrekoStranica}}
     
   var hamburger = document.querySelector(".hamburger");
   var nav_menu = document.querySelector(".nav-menu");
