@@ -108,7 +108,7 @@ for(let i=0;i<nizSlajd.length;i++){
     <h6">$${nizSlajdCena[i]}<h5>
   </div>
 
-    <div  class="suppUs suppBl"><a href="index.html">Shop</a></div>
+    <div  class="suppUs suppBl"><a href="shop.html">Shop</a></div>
 </div>`
 }
 
